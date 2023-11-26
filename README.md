@@ -17,7 +17,9 @@ Instead of using a Monte Carlo simulation, portfolios on the Efficient Frontier 
 
   The Sharpe Ratio is maximized to find the portfolio that provides the highest excess return per unit of risk:
 
-  ![Sharpe Ratio](https://latex.codecogs.com/svg.latex?\Large&space;\max\left(\frac{R_p-R_f}{\sigma_p}\right))
+  $$
+  \max(SR = \frac{R_p - R_f}{\sigma_p})
+  $$
 
   where $R_p$ is the portfolio return, $R_f$ is the risk-free rate, and $\sigma_p$ is the portfolio standard deviation.
 
@@ -25,9 +27,12 @@ Instead of using a Monte Carlo simulation, portfolios on the Efficient Frontier 
 
   The variance (or equivalently, the standard deviation) of the portfolio is minimized to find the portfolio with the lowest risk for a given return:
 
-  ![Minimize Variance](https://latex.codecogs.com/svg.latex?\Large&space;\min(\sigma_p^2))
+  $$
+  \min(\sigma_p^2)
+  $$
 
-  subject to $\sum_{i=1}^{N}w_i=1$ and $R_p=\text{target return}$, where $ w_i $ are the portfolio weights.
+
+  subject to $\sum_{i=1}^{N}w_i=1$ and $R_p=\text{target return}$, where $w_i$ are the portfolio weights.
 
 
 ## Launching the Application
