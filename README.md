@@ -27,7 +27,7 @@ Instead of using a Monte Carlo simulation, portfolios on the Efficient Frontier 
 
   ![Minimize Variance](https://latex.codecogs.com/svg.latex?\Large&space;\min(\sigma_p^2))
 
-  subject to $\sum_{i=1}^{N}w_i=1$ and $ R_p=\text{target return} $, where $ w_i $ are the portfolio weights.
+  subject to $\sum_{i=1}^{N}w_i=1$ and $R_p=\text{target return}$, where $ w_i $ are the portfolio weights.
 
 
 ## Launching the Application
