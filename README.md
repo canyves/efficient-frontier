@@ -19,7 +19,7 @@ Instead of using a Monte Carlo simulation, portfolios on the Efficient Frontier 
 
   ![Sharpe Ratio](https://latex.codecogs.com/svg.latex?\Large&space;\max\left(\frac{R_p-R_f}{\sigma_p}\right))
 
-  where \( R_p \) is the portfolio return, \( R_f \) is the risk-free rate, and \( \sigma_p \) is the portfolio standard deviation.
+  where $R_p$ is the portfolio return, $R_f$ is the risk-free rate, and $\sigma_p$ is the portfolio standard deviation.
 
 - **Minimize the Variance** for a given level of expected return:
 
@@ -27,7 +27,23 @@ Instead of using a Monte Carlo simulation, portfolios on the Efficient Frontier 
 
   ![Minimize Variance](https://latex.codecogs.com/svg.latex?\Large&space;\min(\sigma_p^2))
 
-  subject to \( \sum_{i=1}^{N}w_i=1 \) and \( R_p=\text{target return} \), where \( w_i \) are the portfolio weights.
+  subject to $\sum_{i=1}^{N}w_i=1$ and $ R_p=\text{target return} $, where $ w_i $ are the portfolio weights.
 
-These optimization problems can be solved using techniques such as the Sequential Least Squares Programming (SLSQP) algorithm provided by the `scipy.optimize` module.
 
+## Launching the Application
+
+To run the Streamlit application, you need to have Streamlit installed, you can do so using pip:
+
+```bash
+pip install streamlit
+```
+
+Launch the server using:
+
+```bash
+streamlit run efficient_frontier.py
+```
+
+You can then access the server on localhost:8501, choose stocks to run the simulation on and visualise the efficient frontier.
+
+<img width="434" alt="Screenshot 2023-11-26 at 10 02 05" src="https://github.com/canyves/efficient_frontier/assets/134456846/5e07475b-0fc1-4d4f-bbaa-56e0f64c037d"> 
